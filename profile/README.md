@@ -1,28 +1,37 @@
-# OpenE2EE
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/open-e2ee/design/v0.21.2/brand/generated/hosted/open-e2ee-logo-dark.svg">
+  <img src="https://raw.githubusercontent.com/open-e2ee/design/v0.21.2/brand/generated/hosted/open-e2ee-logo-light.svg" alt="OpenE2EE" width="340">
+</picture>
 
 **End-to-end encryption for TypeScript developers.**
 
-OpenE2EE builds open-source, protocol-level E2EE packages in pure TypeScript. They run where JavaScript applications run: Expo and React Native, modern browsers, and Node. There are no native modules and no prebuild step. OpenE2EE Relay operates the delivery infrastructure beside them.
+OpenE2EE builds open-source encryption software in pure TypeScript. The Signal Protocol SDK supports Expo, React Native, browsers, and Node. OpenE2EE Relay operates encrypted message delivery.
 
 ## Products
 
 ### [OpenE2EE Relay](https://open-e2ee.dev/relay)
 
-Managed encrypted delivery for applications built on the SDK. Relay operates device mailboxes, delivery and pull, and group fan-out. It also operates private encrypted attachment storage, push wakes, and exact lifecycle controls.
+OpenE2EE Relay delivers encrypted messages for applications that use the SDK. It operates device mailboxes, message delivery, and group fan-out. It also operates encrypted attachment storage, push wakes, and lifecycle controls.
 
-Start in the [Console](https://console.open-e2ee.dev). Every project carries a Development environment at no cost and without a card.
+Start in the [Console](https://console.open-e2ee.dev). Each project includes a free Development environment without a card.
 
 ### [Signal Protocol SDK](https://github.com/open-e2ee/signal-protocol-js)
 
-`@open-e2ee/signal-protocol-sdk` is an independent TypeScript implementation of a versioned messaging profile. The profile follows the public [Signal Protocol specifications](https://signal.org/docs/). It carries post-quantum PQXDH, the Double Ratchet, multi-device, groups, sealed sender, encrypted attachments, and safety numbers. The storage, relay, and object-store adapters are pluggable.
+The OpenE2EE Signal Protocol SDK implements the public [Signal Protocol specifications](https://signal.org/docs/) independently.
 
-Released as `1.0.0` on [npm](https://www.npmjs.com/package/@open-e2ee/signal-protocol-sdk).
+It provides post-quantum PQXDH, the Double Ratchet, multi-device messaging, groups, sealed sender, encrypted attachments, and safety numbers. Applications choose their storage, relay, and remote object store adapters.
+
+Install [`@open-e2ee/signal-protocol-sdk` from npm](https://www.npmjs.com/package/@open-e2ee/signal-protocol-sdk). The [README](https://github.com/open-e2ee/signal-protocol-js#readme) includes a demo, a complete example, and runtime setup links.
+
+Released as `2.0.0` on [npm](https://www.npmjs.com/package/@open-e2ee/signal-protocol-sdk).
+
+The Expo SQLCipher store requires a development build. It does not run in Expo Go.
 
 ## The relay boundary
 
 - OpenE2EE Relay stores ciphertext and the account, device, route, timing, size, quota, and abuse metadata that delivery requires.
-- OpenE2EE Relay never needs message plaintext or device private keys.
-- The OpenE2EE Signal Protocol SDK works with OpenE2EE Relay or another adapter. OpenE2EE Relay is the shortest hosted path, not a requirement of the SDK.
+- The relay never needs message plaintext or device private keys.
+- The SDK works with OpenE2EE Relay or another relay adapter. The managed service is optional.
 - A self-hosted adapter keeps relay metadata in infrastructure the developer operates. A managed project places the required relay metadata with OpenE2EE.
 
 ## Links
@@ -36,8 +45,12 @@ Released as `1.0.0` on [npm](https://www.npmjs.com/package/@open-e2ee/signal-pro
 
 ## Licensing
 
-Everything is source-available. The SDK is dual-licensed: **AGPL-3.0** for compatible open-source use, with a **commercial license** available for proprietary products (licensing@open-e2ee.dev). OpenE2EE Relay is a subscription service, and its plans are on [open-e2ee.dev/pricing](https://open-e2ee.dev/pricing).
+The SDK is open source under **AGPL-3.0-or-later**. A [commercial license](https://github.com/open-e2ee/signal-protocol-js/blob/main/COMMERCIAL.md) is available for proprietary products.
+
+OpenE2EE Relay is a subscription service. [View plans](https://open-e2ee.dev/pricing).
 
 ---
 
-*OpenE2EE is an independent project. It is not affiliated with, endorsed by, or sponsored by Signal Messenger LLC or the Signal Technology Foundation.*
+OpenE2EE is an independent project. It is not affiliated with, endorsed by, or sponsored by Signal Messenger LLC or the Signal Technology Foundation.
+
+The SDK is not wire-compatible with Signal Messenger or libsignal.
