@@ -16,7 +16,7 @@ const PACKAGE = '@open-e2ee/signal-protocol-sdk';
 const REGISTRY = `https://registry.npmjs.org/${encodeURIComponent(PACKAGE)}`;
 
 const REQUIRED = [
-  ['the Relay product entry', /^### \[OpenE2EE Relay\]\(https:\/\/open-e2ee\.dev\/relay\)$/m],
+  ['the Relay product entry', /^### \[OpenE2EE Signal Protocol Relay\]\(https:\/\/open-e2ee\.dev\/relay\)$/m],
   ['the SDK product entry', /^### \[Signal Protocol SDK\]\(https:\/\/github\.com\/open-e2ee\/signal-protocol-js\)$/m],
   ['the console link', /https:\/\/console\.open-e2ee\.dev/],
   ['the npm link', /https:\/\/www\.npmjs\.com\/package\/@open-e2ee\/signal-protocol-sdk/],
