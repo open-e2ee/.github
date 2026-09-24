@@ -23,7 +23,7 @@ It provides post-quantum PQXDH, the Double Ratchet, multi-device messaging, grou
 
 Install [`@open-e2ee/signal-protocol-sdk` from npm](https://www.npmjs.com/package/@open-e2ee/signal-protocol-sdk). The [README](https://github.com/open-e2ee/signal-protocol-js#readme) includes a demo, a complete example, and runtime setup links.
 
-Released as `5.0.0` on [npm](https://www.npmjs.com/package/@open-e2ee/signal-protocol-sdk).
+Released as `6.0.0` on [npm](https://www.npmjs.com/package/@open-e2ee/signal-protocol-sdk).
 
 The Expo SQLCipher store requires a native development or release build. It does not run in Expo Go.
 
