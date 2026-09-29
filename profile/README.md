@@ -13,7 +13,7 @@ OpenE2EE builds open-source encryption software in pure TypeScript. The Signal P
 
 The Signal Protocol Relay is built to work with the OpenE2EE Signal Protocol SDK. It delivers encrypted messages for applications that use the SDK, and operates device mailboxes, message delivery, and group fan-out. It also operates encrypted attachment storage, push wakes, and lifecycle controls.
 
-Start in the [Console](https://console.open-e2ee.dev). Each project includes a free Development environment without a card.
+Start in the [Console](https://console.open-e2ee.dev). Each project includes a free Sandbox environment without a card.
 
 ### [Signal Protocol SDK](https://github.com/open-e2ee/signal-protocol-js)
 
@@ -23,7 +23,7 @@ It provides post-quantum PQXDH, the Double Ratchet, multi-device messaging, grou
 
 Install [`@open-e2ee/signal-protocol-sdk` from npm](https://www.npmjs.com/package/@open-e2ee/signal-protocol-sdk). The [README](https://github.com/open-e2ee/signal-protocol-js#readme) includes a demo, a complete example, and runtime setup links.
 
-Released as `7.2.0` on [npm](https://www.npmjs.com/package/@open-e2ee/signal-protocol-sdk).
+Released as `8.1.0` on [npm](https://www.npmjs.com/package/@open-e2ee/signal-protocol-sdk).
 
 The Expo SQLCipher store requires a native development or release build. It does not run in Expo Go.
 
